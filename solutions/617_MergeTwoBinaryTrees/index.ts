@@ -3,6 +3,8 @@
 
 import { TreeNode } from "../../data_structure/treeNode";
 
+// Time complexity: O(n)
+// Space complexity: O(n)
 export function mergeTrees(t1: TreeNode | null, t2: TreeNode | null): TreeNode | null {
   if (t1 === null) {
     return t2;
