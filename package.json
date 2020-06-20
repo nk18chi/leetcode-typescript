@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --watch 'solutions/**/*.ts' --exec 'ts-node'",
     "test": "mocha -r ts-node/register --timeout=10000 solutions/**/test.ts"
   },
   "repository": {
