@@ -1,4 +1,6 @@
 // import { createTreeNode } from "../../data_structure/treeNode";
+// import { createListNode } from "../../data_structure/listNode";
+
 import { func } from "./index";
 
 const assert = require("assert");
