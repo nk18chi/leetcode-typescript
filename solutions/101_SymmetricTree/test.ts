@@ -11,8 +11,8 @@ interface ITestCase {
 describe("#isSymmetric", () => {
   const tests: ITestCase[] = [
     {
-      arg1: [],
-      result: false,
+      arg1: [1, 2, 2, 3, 4, 4, 3],
+      result: true,
     },
   ];
   let i = 0;
