@@ -12,8 +12,8 @@ interface ITestCase {
 describe("#inorderTraversal", () => {
   const tests: ITestCase[] = [
     {
-      arg1: createTreeNode([]),
-      result: [],
+      arg1: createTreeNode([1, null, 2, 3]),
+      result: [1, 3, 2],
     },
   ];
   let i = 0;
