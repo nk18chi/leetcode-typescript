@@ -3,8 +3,8 @@
 
 import { TreeNode } from "../../data_structure/treeNode";
 
-// Time complexity: O()
-// Space complexity: O()
+// Time complexity: O(n)
+// Space complexity: O(n)
 export function increasingBST(root: TreeNode | null): TreeNode | null {
   const res: TreeNode = new TreeNode(0);
   let head: TreeNode = res;
