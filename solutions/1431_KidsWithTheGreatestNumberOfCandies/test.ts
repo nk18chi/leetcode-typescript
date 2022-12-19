@@ -8,7 +8,7 @@ const assert = require("assert");
 interface ITestCase {
   arg1: number[];
   arg2: number;
-  result: number;
+  result: boolean[];
 }
 
 describe("#fkidsWithCandiesunc", () => {
@@ -16,7 +16,7 @@ describe("#fkidsWithCandiesunc", () => {
     {
       arg1: [0],
       arg2: 0,
-      result: 0,
+      result: [true],
     },
   ];
   let i = 0;
