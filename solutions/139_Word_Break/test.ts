@@ -1,26 +1,35 @@
-// import { createTreeNode } from "../../data_structure/treeNode";
-// import { createListNode } from "../../data_structure/listNode";
-
-import { func } from "./index";
+import { wordBreak } from "./index";
 
 const assert = require("assert");
 
 interface ITestCase {
-  arg1: number;
-  result: number;
+  arg1: string;
+  arg2: string[];
+  result: boolean;
 }
 
-describe("#func", () => {
+describe("#wordBreak", () => {
   const tests: ITestCase[] = [
     {
-      arg1: 0,
-      result: 0,
+      arg1: "leetcode",
+      arg2: ["leet", "code"],
+      result: true,
+    },
+    {
+      arg1: "applepenapple",
+      arg2: ["apple", "pen"],
+      result: true,
+    },
+    {
+      arg1: "catsandog",
+      arg2: ["cats", "dog", "sand", "and", "cat"],
+      result: false,
     },
   ];
   let i = 0;
-  for (let { arg1, result } of tests) {
+  for (let { arg1, arg2, result } of tests) {
     it(`test${i++}`, () => {
-      assert.deepStrictEqual(func(arg1), result);
+      assert.deepStrictEqual(wordBreak(arg1, arg2), result);
     });
   }
 });
